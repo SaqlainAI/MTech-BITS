@@ -77,6 +77,21 @@ public class SortedLinkedList {
         // Remove the element
         prev.next = current.next;
     }
+    
+    public boolean find(int data) {
+    // Start at the head of the linked list
+    Node current = head;
+
+    // Search for the element until we reach the end of the list
+    while (current != null && current.data <= data) {
+        if (current.data == data) {
+            return true;
+        }
+        current = current.next;
+    }
+    return false;
+}
+
 
     // Method to print the linked list
     public void print() {
@@ -90,4 +105,22 @@ public class SortedLinkedList {
         }
         System.out.println();
     }
+    
+    public static void main (String[] args)
+  {
+    SortedLinkedList list = new SortedLinkedList();
+    list.add(5);
+    list.add(3);
+    list.add(8);
+    list.add(1);
+    list.add(2);
+
+    // Find an element in the list
+    boolean found = list.find(3);
+    if (found) {
+        System.out.println("Element found in list");
+    } else {
+        System.out.println("Element not found in list");
+    }
+  }
 }
