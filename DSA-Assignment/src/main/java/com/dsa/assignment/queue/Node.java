@@ -1,9 +1,9 @@
-package com.dsa.assignment.queue;
+package main.java.com.dsa.assignment.queue;
 
 public class Node {
-
-   public int data;
-   public Node next;
+    // class Node for linked list
+   public int data; // actual data
+   public Node next; // next node
 
    public Node(int data) {
        this.data = data;

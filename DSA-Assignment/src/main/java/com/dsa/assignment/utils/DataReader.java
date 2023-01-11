@@ -1,4 +1,4 @@
-package com.dsa.assignment.utils;
+package main.java.com.dsa.assignment.utils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import static com.dsa.assignment.utils.Constants.*;
+import static main.java.com.dsa.assignment.utils.Constants.*;
 
 public class DataReader {
 

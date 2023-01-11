@@ -1,13 +1,8 @@
+package main.java.com.dsa.assignment.sorted_list;
+
+import main.java.com.dsa.assignment.queue.Node;
+
 public class SortedLinkedList {
-    // Inner class to represent a node in the linked list
-    private class Node {
-        int data;
-        Node next;
-        
-        public Node(int data) {
-            this.data = data;
-        }
-    }
 
     // Head of the linked list
     private Node head;
@@ -19,8 +14,9 @@ public class SortedLinkedList {
 
     // Method to add a new element to the linked list
     public void add(int data) {
+        if(isDuplicate(data)) return;
+
         
-        long startTime = System.nanoTime();
         // Create a new node with the given data
         Node newNode = new Node(data);
 
@@ -48,17 +44,14 @@ public class SortedLinkedList {
             newNode.next = prev.next;
             prev.next = newNode;
         }
-        
-        long endTime = System.nanoTime();
-        long duration = endTime - startTime;
-        System.out.println("Insertion time: " + duration + " nanoseconds");
+
     }
 
     // Method to remove an element from the linked list
     public void remove(int data) {
-    
-        long startTime = System.nanoTime();
+
         
+
         // If the linked list is empty, return
         if (head == null) {
             return;
@@ -85,29 +78,23 @@ public class SortedLinkedList {
 
         // Remove the element
         prev.next = current.next;
-        
-        long endTime = System.nanoTime();
-        long duration = endTime - startTime;
-        System.out.println("Deletion time: " + duration + " nanoseconds");
-    }
-    
-    public boolean find(int data) {
-    long startTime = System.nanoTime();
-    // Start at the head of the linked list
-    Node current = head;
 
-    // Search for the element until we reach the end of the list
-    while (current != null && current.data <= data) {
-        if (current.data == data) {
-            return true;
-        }
-        current = current.next;
     }
-    long endTime = System.nanoTime();
-     long duration = endTime - startTime;
-     System.out.println("Finding time: " + duration + " nanoseconds");
-    return false;
-}
+
+    public boolean find(int data) {
+        
+        // Start at the head of the linked list
+        Node current = head;
+
+        // Search for the element until we reach the end of the list
+        while (current != null && current.data <= data) {
+            if (current.data == data) {
+                return true;
+            }
+            current = current.next;
+        }
+        return false;
+    }
 
 
     // Method to print the linked list
@@ -122,22 +109,22 @@ public class SortedLinkedList {
         }
         System.out.println();
     }
-    
-    public static void main (String[] args)
-  {
-    SortedLinkedList list = new SortedLinkedList();
-    list.add(5);
-    list.add(3);
-    list.add(8);
-    list.add(1);
-    list.add(2);
 
-    // Find an element in the list
-    boolean found = list.find(3);
-    if (found) {
-        System.out.println("Element found in list");
-    } else {
-        System.out.println("Element not found in list");
+    // Method to check if the element is already in the linked list
+    public boolean isDuplicate(int data){
+        // Start at the head of the linked list
+        Node temp = head;
+        // Compare each element with the new element
+        while (temp != null) {
+            // if the element is already in the linked list return true
+            if (temp.data == data) {
+                return true;
+            }
+            temp = temp.next;
+        }
+        return false;
     }
-  }
+
+
 }
+

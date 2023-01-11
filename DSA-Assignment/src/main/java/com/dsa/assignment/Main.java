@@ -1,12 +1,18 @@
-package com.dsa.assignment;
+package main.java.com.dsa.assignment;
 
-import java.util.Arrays;
+import main.java.com.dsa.assignment.utils.Menu;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(Arrays.stream(args).findFirst());
+        Menu menu = new Menu();
+        menu.handleInput();
+
     }
 
     // TODO
-    //
+    // Add BST implementation
+    // Add CSV files
+    // Test and prepare graph
+    // Modify the design doc based on the updated code
 }
+
