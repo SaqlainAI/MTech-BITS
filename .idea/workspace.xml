@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="316e280f-bbc3-43af-b727-b3ef0c6d490b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MTech-BITS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MTech-BITS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/SortedLinkedList" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/queue/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/queue/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/queue/QueueUsingArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/queue/ArrayQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/queue/QueueUsingLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/queue/LinkedListQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/utils/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/utils/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
