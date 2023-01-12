@@ -127,7 +127,7 @@ public class Menu {
                 }
                 fileScanner.close();
             } catch (FileNotFoundException e) {
-                System.out.println("File not found.");
+                System.out.println("File not found " + fileName);
             }
         }
         long endTime = System.nanoTime();
@@ -175,7 +175,7 @@ public class Menu {
                 }
                 fileScanner.close();
             } catch (FileNotFoundException e) {
-                System.out.println("File not found.");
+                System.out.println("File not found " + fileName);
             }
         }
         long endTime = System.nanoTime();
@@ -223,7 +223,7 @@ public class Menu {
                 }
                 fileScanner.close();
             } catch (FileNotFoundException e) {
-                System.out.println("File not found.");
+                System.out.println("File not found " + fileName);
             }
         }
         long endTime = System.nanoTime();
@@ -284,7 +284,7 @@ public class Menu {
 //                }
 //                fileScanner.close();
 //            } catch (FileNotFoundException e) {
-//                System.out.println("File not found.");
+//                System.out.println("File not found " + fileName);
 //            }
 //        }
 //        long endTime = System.nanoTime();
