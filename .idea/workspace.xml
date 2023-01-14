@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="316e280f-bbc3-43af-b727-b3ef0c6d490b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/10000_random_integers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/test_data/10000_random_integers.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/10000_random_integers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/test_data/10000_random_integers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/1000_random_integers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/test_data/1000_random_integers.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/1000_random_integers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/test_data/1000_random_integers.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/100_random_integers.csv" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/test_data/100_random_integers.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/100_random_integers.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/test_data/100_random_integers.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
