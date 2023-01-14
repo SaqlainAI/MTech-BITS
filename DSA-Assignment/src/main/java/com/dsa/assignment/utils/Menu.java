@@ -1,6 +1,7 @@
 package main.java.com.dsa.assignment.utils;
 
 import main.java.com.dsa.assignment.queue.ArrayQueue;
+import main.java.com.dsa.assignment.sorted_list.BST;
 import main.java.com.dsa.assignment.queue.LinkedListQueue;
 import main.java.com.dsa.assignment.sorted_list.SortedLinkedList;
 
@@ -11,14 +12,14 @@ public class Menu {
     ArrayQueue arrayQueue;
     LinkedListQueue linkedListQueue;
     SortedLinkedList sortedLinkedList;
-//    BST bst;
+    BST bst;
     Scanner scanner;
 
     public Menu() {
         arrayQueue = new ArrayQueue(Constants.MAX_QUEUE_SIZE);
         linkedListQueue = new LinkedListQueue();
         sortedLinkedList = new SortedLinkedList();
-//        bst = new BST();
+        bst = new BST();
         scanner = new Scanner(System.in);
     }
 
@@ -80,21 +81,21 @@ public class Menu {
                 case 10:
                     removeElementFromSortedList();
                     break;
-//                case 11:
-//                    inputBSTFromFile();
-//                    break;
-//                case 12:
-//                    inputBSTFromCommandLine();
-//                    break;
-//                case 13:
-//                    findElementInBST();
-//                    break;
-//                case 14:
-//                    removeElementFromBST();
-//                    break;
-//                case 15:
-//                    printBST();
-//                    break;
+                case 11:
+                    inputBSTFromFile();
+                    break;
+                case 12:
+                    inputBSTFromCommandLine();
+                    break;
+                case 13:
+                    findElementInBST();
+                    break;
+                case 14:
+                    removeElementFromBST();
+                    break;
+                case 15:
+                    printBST();
+                    break;
                 case 16:
                     quit = true;
                     break;
@@ -266,70 +267,70 @@ public class Menu {
     }
 
 
-//    private void inputBSTFromFile() {
-//        System.out.println("Enter file names separated by commas: ");
-//        String fileNames = scanner.nextLine();
-//        String[] files = fileNames.split(",");
-//        long startTime = System.nanoTime();
-//        for (String fileName : files) {
-//            File file = new File(fileName);
-//            try {
-//                Scanner fileScanner = new Scanner(file);
-//                while (fileScanner.hasNextLine()) {
-//                    String[] line = fileScanner.nextLine().split(",");
-//                    for (String value : line) {
-//                        int data = Integer.parseInt(value);
-//                        if (!bst.isDuplicate(data)) bst.insert(data);
-//                    }
-//                }
-//                fileScanner.close();
-//            } catch (FileNotFoundException e) {
-//                System.out.println("File not found " + fileName);
-//            }
-//        }
-//        long endTime = System.nanoTime();
-//        long duration = endTime - startTime;
-//        System.out.println("Insertion time for BST: " + duration + " nanoseconds");
-//    }
-//
+    private void inputBSTFromFile() {
+        System.out.println("Enter file names separated by commas: ");
+        String fileNames = scanner.nextLine();
+        String[] files = fileNames.split(",");
+        long startTime = System.nanoTime();
+        for (String fileName : files) {
+            File file = new File(fileName);
+            try {
+                Scanner fileScanner = new Scanner(file);
+                while (fileScanner.hasNextLine()) {
+                    String[] line = fileScanner.nextLine().split(",");
+                    for (String value : line) {
+                        int data = Integer.parseInt(value);
+                        if (!bst.isDuplicate(data)) bst.addElement(data);
+                    }
+                }
+                fileScanner.close();
+            } catch (FileNotFoundException e) {
+                System.out.println("File not found " + fileName);
+            }
+        }
+        long endTime = System.nanoTime();
+        long duration = endTime - startTime;
+        System.out.println("Insertion time for BST: " + duration + " nanoseconds");
+    }
+
 //    method to add the given data to the BST
-//    private void inputBSTFromCommandLine() {
-//        System.out.println("Enter element: ");
-//        int data = scanner.nextInt();
-//        if(!bst.isDuplicate(data)) bst.insert(data);
-//    }
-//
+    private void inputBSTFromCommandLine() {
+        System.out.println("Enter element: ");
+        int data = scanner.nextInt();
+        if(!bst.isDuplicate(data)) bst.addElement(data);
+    }
+
 //    method to find the given element in the BST
-//    private void findElementInBST() {
-//        System.out.println("Enter element to find: ");
-//        int data = scanner.nextInt();
-//        long startTime = System.nanoTime();
-//        boolean found = bst.find(data);
-//        if (found) {
-//            System.out.println("Element found.");
-//        } else {
-//            System.out.println("Element not found.");
-//        }
-//        long endTime = System.nanoTime();
-//        long duration = endTime - startTime;
-//        System.out.println("Search time for BST: " + duration + " nanoseconds");
-//    }
-//
+    private void findElementInBST() {
+        System.out.println("Enter element to find: ");
+        int data = scanner.nextInt();
+        long startTime = System.nanoTime();
+        boolean found = bst.find(data);
+        if (found) {
+            System.out.println("Element found.");
+        } else {
+            System.out.println("Element not found.");
+        }
+        long endTime = System.nanoTime();
+        long duration = endTime - startTime;
+        System.out.println("Search time for BST: " + duration + " nanoseconds");
+    }
+
 //    method to remove the given data from the BST
-//    private void removeElementFromBST() {
-//        long startTime = System.nanoTime();
-//        System.out.println("Enter element to remove: ");
-//        int data = scanner.nextInt();
-//        bst.remove(data);
-//        long endTime = System.nanoTime();
-//        long duration = endTime - startTime;
-//        System.out.println("Deletion time for array queue: " + duration + " nanoseconds");
-//    }
-//
+    private void removeElementFromBST() {
+        long startTime = System.nanoTime();
+        System.out.println("Enter element to remove: ");
+        int data = scanner.nextInt();
+        bst.deleteKey(data);
+        long endTime = System.nanoTime();
+        long duration = endTime - startTime;
+        System.out.println("Deletion time for BST: " + duration + " nanoseconds");
+    }
+
 //    method to print the contents of the BST
-//    private void printBST(){
-//        bst.inOrder();
-//    }
+    private void printBST(){
+        bst.print();
+    }
 
 
 

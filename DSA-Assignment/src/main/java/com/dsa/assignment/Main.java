@@ -8,9 +8,6 @@ public class Main {
         menu.handleInput();
     }
 
-    // TODO
-    // Add BST implementation
-    // Modify the design doc based on the updated code
 }
 
 

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="316e280f-bbc3-43af-b727-b3ef0c6d490b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/utils/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/utils/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +57,20 @@
       <recent name="$PROJECT_DIR$/DSA-Assignment/src/main/java/com/dsa/assignment/sorted_list" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="BST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.com.dsa.assignment.sorted_list.BST" />
+      <module name="MTech-BITS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.dsa.assignment.sorted_list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.java.com.dsa.assignment.Main" />
       <module name="MTech-BITS" />
@@ -72,6 +87,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.BST1" />
       </list>
     </recent_temporary>
   </component>
